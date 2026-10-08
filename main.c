@@ -13,7 +13,7 @@ int getuserChoice() {
         printf("Enter your Choice : ");
         
         if (scanf("%d", &choice) != 1) {
-            printf("Invalid input! Please enter a number.");
+            printf("\nInvalid input! Please enter a number.\n\n");
             while (getchar() != '\n') {
                 choice = 0;
             }
