@@ -2,6 +2,8 @@
 #include <time.h>
 #include <stdlib.h>
 
+// Function to ask for user choices
+
 int getuserChoice() {
     int choice = 0;
     
@@ -24,9 +26,13 @@ int getuserChoice() {
     return choice;
 }
 
+// Function to get computer's random number
+
 int getComputerChoice() {
     return (rand() % 3) + 1;
 }
+
+// Function to check for winner between user and computer
 
 void CheckWinner(int userChoice, int computerChoice) {
     if (userChoice == computerChoice) {
@@ -41,6 +47,8 @@ void CheckWinner(int userChoice, int computerChoice) {
         printf("You Lose!!\n");
     }
 }
+
+// Main function
 
 int main() {
 
